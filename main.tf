@@ -55,6 +55,6 @@ resource "aws_elasticache_cluster" "elasticache" {
 #  value = aws_elasticache_cluster.elasticache.cache_nodes[0].address
 #  overwrite = true
 
-}
+
 
 
