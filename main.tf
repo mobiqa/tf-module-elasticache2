@@ -53,6 +53,8 @@ resource "aws_ssm_parameter" "elasticache_endpoint" {
   name  = "${var.env}.elasticache.ENDPOINT"
   type  = "String"
   value = aws_elasticache_cluster.elasticache.cache_nodes[0].address
+  overwrite = true
+
 }
 
 
